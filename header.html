@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Acme|Alegreya|Alegreya+Sans|Anton|Archivo|Archivo+Black|Archivo+Narrow|Arimo|Arvo|Asap|Asap+Condensed|Bitter|Bowlby+One+SC|Bree+Serif|Cabin|Cairo|Catamaran|Crete+Round|Crimson+Text|Cuprum|Dancing+Script|Dosis|Droid+Sans|Droid+Serif|EB+Garamond|Exo|Exo+2|Faustina|Fira+Sans|Fjalla+One|Francois+One|Gloria+Hallelujah|Hind|Inconsolata|Indie+Flower|Josefin+Sans|Julee|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lobster|Lora|Mada|Manuale|Maven+Pro|Merriweather|Merriweather+Sans|Montserrat|Montserrat+Subrayada|Mukta+Vaani|Muli|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|PT+Serif|Pacifico|Passion+One|Pathway+Gothic+One|Play|Playfair+Display|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Ropa+Sans|Rubik|Saira|Saira+Condensed|Saira+Extra+Condensed|Saira+Semi+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Signika|Slabo+27px|Source+Code+Pro|Source+Sans+Pro|Spectral|Titillium+Web|Ubuntu|Ubuntu+Condensed|Varela+Round|Vollkorn|Work+Sans|Yanone+Kaffeesatz|Zilla+Slab|Zilla+Slab+Highlight"
+      rel="stylesheet"
+    />
+    <title>Header</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="logo">Hekto</div>
+
+        <nav class="navigation_wrapper">
+          <div class="router_link">Home</div>
+
+          <div class="router_link">Make</div>
+
+          <div class="router_link">Catalogue</div>
+
+          <div class="router_link">Cart</div>
+        </nav>
+
+        <div class="search_bar_wrapper">
+          <input class="search_bar_input" type="text" />
+
+          <button class="search_bar_button">
+            <img src="./assets/uil_search.svg" />
+          </button>
+        </div>
+
+        <div class="user_buttons_wrapper">
+          <button class="user_guide_button">Login</button>
+
+          <button class="logout user_guide_button">Logout</button>
+
+          <button class="user_guide_button">Register</button>
+        </div>
+      </div>
+    </header>
+  </body>
+  <style>
+    .header_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 61px 0;
+      flex-wrap: wrap;
+
+      .logo {
+        color: #0d0e43;
+        font-family: Josefin Sans;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 100px;
+      }
+
+      .navigation_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+      }
+
+      .router_link {
+        color: #000;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+      }
+
+      .search_bar_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 100px;
+
+        .search_bar_input {
+          border: 2px solid #e7e6ef;
+          min-height: 34px;
+          width: 317px;
+        }
+
+        .search_bar_button {
+          background: #fb2e86;
+          border: none;
+          height: 40px;
+          width: 51px;
+        }
+      }
+
+      .user_buttons_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        .user_guide_button {
+          color: #0d0e43;
+          font-family: Josefin Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 20px;
+          background: none;
+          border: none;
+        }
+
+        .logout {
+          color: #fb2e86;
+        }
+      }
+    }
+  </style>
+</html>

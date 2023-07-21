@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Acme|Alegreya|Alegreya+Sans|Anton|Archivo|Archivo+Black|Archivo+Narrow|Arimo|Arvo|Asap|Asap+Condensed|Bitter|Bowlby+One+SC|Bree+Serif|Cabin|Cairo|Catamaran|Crete+Round|Crimson+Text|Cuprum|Dancing+Script|Dosis|Droid+Sans|Droid+Serif|EB+Garamond|Exo|Exo+2|Faustina|Fira+Sans|Fjalla+One|Francois+One|Gloria+Hallelujah|Hind|Inconsolata|Indie+Flower|Josefin+Sans|Julee|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lobster|Lora|Mada|Manuale|Maven+Pro|Merriweather|Merriweather+Sans|Montserrat|Montserrat+Subrayada|Mukta+Vaani|Muli|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|PT+Serif|Pacifico|Passion+One|Pathway+Gothic+One|Play|Playfair+Display|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Ropa+Sans|Rubik|Saira|Saira+Condensed|Saira+Extra+Condensed|Saira+Semi+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Signika|Slabo+27px|Source+Code+Pro|Source+Sans+Pro|Spectral|Titillium+Web|Ubuntu|Ubuntu+Condensed|Varela+Round|Vollkorn|Work+Sans|Yanone+Kaffeesatz|Zilla+Slab|Zilla+Slab+Highlight"
+      rel="stylesheet"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="logo">Hekto</div>
+
+        <nav class="navigation_wrapper">
+          <div class="router_link">Home</div>
+
+          <div class="router_link">Make</div>
+
+          <div class="router_link">Catalogue</div>
+
+          <div class="router_link">Cart</div>
+        </nav>
+
+        <div class="search_bar_wrapper">
+          <input class="search_bar_input" type="text" />
+
+          <button class="search_bar_button">
+            <img src="./assets/uil_search.svg" />
+          </button>
+        </div>
+
+        <div class="user_buttons_wrapper">
+          <button class="user_guide_button">Login</button>
+
+          <button class="logout user_guide_button">Logout</button>
+
+          <button class="user_guide_button">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="register_page">
+      <div class="register_wrapper">
+        <div class="heading">Register</div>
+
+        <div class="error_register">Error! Invalid email address!</div>
+
+        <form class="ng_form">
+          <input class="input_field" type="email" placeholder="Email address" />
+
+          <input class="input_field" type="password" placeholder="Password" />
+
+          <input
+            class="input_field"
+            type="password"
+            placeholder="Repeat Password"
+          />
+
+          <button class="sign_in_button" type="submit">Sign in</button>
+
+          <div class="log_in_link">
+            If you already have an account?
+            <a href="https://youtube.com" class="sign_in">Sign in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_wrapper">
+        <div class="logo_and_contacts_wrapper">
+          <div class="logo">Glass Painting</div>
+
+          <div class="contact_info">Contact info</div>
+
+          <div class="contact_info">
+            17 Princess Road, London, Greater London NW1 8JR, UK
+          </div>
+
+          <div class="contact_info">
+            Telephone: <a href="tel:088888888">088888888</a>
+          </div>
+
+          <div class="contact_info">
+            Telephone:
+            <a href="mailto:yakaagag@gmail.com">yakaagag@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="social_media_icons">
+          <img class="social_icon" src="./assets/facebook.svg" />
+
+          <img class="social_icon" src="./assets/instagram.svg" />
+
+          <a href="https://youtube.com" target="_blank">
+            <img class="social_icon" src="./assets/youtube.svg"
+          /></a>
+        </div>
+      </div>
+
+      <div class="all_right_reserved_wrapper">
+        <div class="footer_copyright">©Webecy - All Rights Reserved</div>
+      </div>
+    </footer>
+  </body>
+  <style>
+    body {
+      margin: 0px;
+    }
+    .register_page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 200px 0;
+
+      .register_wrapper {
+        background: #fff;
+        box-shadow: 0px 0px 25px 10px #f8f8fb;
+        /* min-height: 488px;
+        min-width: 544px; */
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .heading {
+          color: #000;
+          font-family: Josefin Sans;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        .error_register {
+          color: red;
+          font-family: Lato;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          font-weight: bold;
+        }
+
+        .ng_form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 28px;
+
+          .input_field {
+            border-radius: 2px;
+            border: 1px solid #c2c5e1;
+            background: #fff;
+            color: #9096b2;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            min-width: 426px;
+            min-height: 48px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            padding: 5px;
+          }
+
+          .sign_in_button {
+            width: 432px;
+            height: 47px;
+            flex-shrink: 0;
+            border-radius: 3px;
+            background: #fb2e86;
+            color: var(--white, #fff);
+            font-family: Lato;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border: none;
+          }
+
+          .log_in_link {
+            color: #9096b2;
+            font-family: Lato;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  </style>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+    .header_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 61px 0;
+      flex-wrap: wrap;
+
+      .logo {
+        color: #0d0e43;
+        font-family: Josefin Sans;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 100px;
+      }
+
+      .navigation_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+      }
+
+      .router_link {
+        color: #000;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+      }
+
+      .search_bar_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 100px;
+
+        .search_bar_input {
+          border: 2px solid #e7e6ef;
+          min-height: 34px;
+          width: 317px;
+        }
+
+        .search_bar_button {
+          background: #fb2e86;
+          border: none;
+          height: 40px;
+          width: 51px;
+        }
+      }
+
+      .user_buttons_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        .user_guide_button {
+          color: #0d0e43;
+          font-family: Josefin Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 20px;
+          background: none;
+          border: none;
+        }
+
+        .logout {
+          color: #fb2e86;
+        }
+      }
+    }
+  </style>
+  <style>
+    .footer_wrapper {
+      min-height: 145px;
+      display: flex;
+      background: #eeeffb;
+      padding: 55px 10px 10px 10px;
+      justify-content: space-evenly;
+
+      .logo_and_contacts_wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo {
+        color: #0d0e43;
+        font-family: Josefin Sans;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 15px;
+      }
+
+      .contact_info,
+      a {
+        color: var(--sub-text-color, #8a8fb9);
+        /* paragraph text */
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .social_media_icons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+
+        .social_icon {
+          width: 36px;
+          background: #151875;
+          border-radius: 50%;
+          padding: 7px;
+        }
+      }
+    }
+
+    .all_right_reserved_wrapper {
+      height: 53px;
+      background: #e7e4f8;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 10px;
+
+      .footer_copyright {
+        color: #9da0ae;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  </style>
+</html>
