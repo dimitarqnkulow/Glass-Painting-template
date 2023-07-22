@@ -3,14 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Acme|Alegreya|Alegreya+Sans|Anton|Archivo|Archivo+Black|Archivo+Narrow|Arimo|Arvo|Asap|Asap+Condensed|Bitter|Bowlby+One+SC|Bree+Serif|Cabin|Cairo|Catamaran|Crete+Round|Crimson+Text|Cuprum|Dancing+Script|Dosis|Droid+Sans|Droid+Serif|EB+Garamond|Exo|Exo+2|Faustina|Fira+Sans|Fjalla+One|Francois+One|Gloria+Hallelujah|Hind|Inconsolata|Indie+Flower|Josefin+Sans|Julee|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lobster|Lora|Mada|Manuale|Maven+Pro|Merriweather|Merriweather+Sans|Montserrat|Montserrat+Subrayada|Mukta+Vaani|Muli|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|PT+Serif|Pacifico|Passion+One|Pathway+Gothic+One|Play|Playfair+Display|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Ropa+Sans|Rubik|Saira|Saira+Condensed|Saira+Extra+Condensed|Saira+Semi+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Signika|Slabo+27px|Source+Code+Pro|Source+Sans+Pro|Spectral|Titillium+Web|Ubuntu|Ubuntu+Condensed|Varela+Round|Vollkorn|Work+Sans|Yanone+Kaffeesatz|Zilla+Slab|Zilla+Slab+Highlight"
+      rel="stylesheet"
+    />
     <title>Make</title>
   </head>
   <body>
-    <h1>Text!</h1>
+    <div class="make_your_own_wrapper">
+      <div class="header">
+        <h1 class="heading">Make your own</h1>
+      </div>
+    </div>
+
+    <div class="form_wrapper">
+      <form class="form">
+        <h2 class="form_heading">
+          Describe your emotions on glass and we will paint it for you!
+        </h2>
+        <div class="name_wrapper">
+          <input class="form_input" placeholder="Your Name*" type="text" />
+          <input class="form_input" placeholder="Your Surename" type="text" />
+        </div>
+
+        <input class="form_input" placeholder="Phone" type="tel" />
+
+        <textarea
+          name="descritpion"
+          class="form_input text_area"
+          placeholder="Type Your Messege*"
+          type="text"
+        ></textarea>
+        <button class="button button_order">Order</button>
+      </form>
+    </div>
   </body>
   <style>
     * {
-      color: red;
+      box-sizing: border-box;
+    }
+
+    .header {
+      background: #f6f5ff;
+      padding: 6rem 20rem;
+      .heading {
+        color: #101750;
+        font-family: Josefin Sans;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .form_wrapper {
+      padding: 6rem 20rem;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        gap: 35px;
+        .form_heading {
+          color: #252d6d;
+          font-family: Lato;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 25.6px; /* 106.667% */
+        }
+
+        .form_input {
+          border-radius: 3px;
+          border: 1px solid rgba(164, 182, 200, 0.7);
+          color: var(--sub-text-color, #8a8fb9);
+          font-family: Lato;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.16px;
+          height: 45px;
+          padding: 10px;
+        }
+
+        .name_wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .form_input {
+            width: 49%;
+          }
+        }
+
+        .form_input.text_area {
+          height: 166px;
+          text-align: start;
+        }
+
+        .button {
+          width: 134px;
+          height: 39px;
+          border: none;
+          border-radius: 2px;
+          background: #fb2e86;
+          color: #fff;
+          font-family: Josefin Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25.6px; /* 160% */
+        }
+      }
     }
   </style>
 </html>
