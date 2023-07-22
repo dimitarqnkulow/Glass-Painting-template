@@ -44,7 +44,7 @@
       </div>
 
       <div class="product_banner_wrapper">
-        <div class="product_description">
+        <div class="product_description_wrapper">
           <div class="product_header">
             New Furniture Collection Trends in 2020
           </div>
@@ -76,6 +76,24 @@
             </div>
             <button class="product_card_button">Details</button>
           </div>
+
+          <div class="product_card">
+            <img class="product_card_image" />
+            <div class="product_card_name">Cantilever chair</div>
+            <div class="product_card_price">
+              $26.00 <span class="product_card_discount_price">$42.00 </span>
+            </div>
+            <button class="product_card_button">Details</button>
+          </div>
+
+          <div class="product_card">
+            <img class="product_card_image" />
+            <div class="product_card_name">Cantilever chair</div>
+            <div class="product_card_price">
+              $26.00 <span class="product_card_discount_price">$42.00 </span>
+            </div>
+            <button class="product_card_button">Details</button>
+          </div>
         </div>
       </div>
     </div>
@@ -92,6 +110,7 @@
       display: flex;
       flex-direction: column;
       .about_us_wrapper {
+        padding: 2rem 15rem;
         .image_and_text_wrapper {
           display: flex;
           padding: 50px;
@@ -141,10 +160,15 @@
 
       /*HOME BANNER STYLES */
       .product_banner_wrapper {
+        padding: 2rem 17rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background: url("./assets/product_banner.svg");
+
+        .product_description_wrapper {
+          width: 50%;
+        }
 
         .product_header {
           color: #000;
@@ -171,6 +195,10 @@
       .trending_products_wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 2rem;
+
 
         .trending_products_header {
           color: var(--text, #151875);
@@ -180,18 +208,26 @@
           font-weight: 600;
           line-height: normal;
         }
+
+        .trendings_products_list {
+          display: flex;
+          gap: 50px;
+          padding: 5rem 0;
+        }
       }
       .product_card {
-        padding: 10px;
+        padding: 10px 10px 25px 10px; 
         display: flex;
         flex-direction: column;
         max-width: 270px;
         max-height: 350px;
         align-items: center;
         align-items: center;
+        position: relative;
+        gap: 15px;
 
-        /* shadow */
-        box-shadow: 0px 8px 40px 0px rgba(49, 32, 138, 0.05);
+        border: 1px solid #f5f5f5;
+         border-radius: 5px;
 
         .product_card_image {
           min-width: 247px;
@@ -253,6 +289,8 @@
           font-weight: 600;
           line-height: normal;
           border: none;
+          position: absolute;
+          bottom: -25px;
         }
       }
     }
