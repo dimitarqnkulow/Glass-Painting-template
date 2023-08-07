@@ -20,10 +20,10 @@
     <div class="cart_wrapper">
       <div class="products_list">
         <div class="list_header_wrapper">
-          <div class="list_header_item">Product</div>
-          <div class="list_header_item">Price</div>
-          <div class="list_header_item">Quantity</div>
-          <div class="list_header_item">Total</div>
+          <div class="list_header_item first_item">Product</div>
+          <div class="list_header_item second_item">Price</div>
+          <div class="list_header_item second_item">Quantity</div>
+          <div class="list_header_item second_item">Total</div>
         </div>
 
         <div class="items_wrapper">
@@ -77,6 +77,24 @@
     .cart_wrapper {
       display: flex;
       box-sizing: border-box;
+    }
+
+    .cart_wrapper {
+      margin-top: 100px;
+      padding: 0 20rem;
+    }
+
+    .item_wrapper {
+      width: 40%;
+      gap: 20px;
+    }
+
+    .first_item {
+      width: 40%;
+    }
+
+    .second_item {
+      width: 20%;
     }
 
     .item_image_wrapper {
@@ -146,13 +164,27 @@
       line-height: normal;
     }
 
+    .item_price {
+      width: 20%;
+    }
+
+    .item_quantity_wrapper {
+      width: 20%;
+    }
+
+    .item_total_price {
+      width: 20%;
+    }
+
     .item {
       align-items: center;
-      justify-content: center;
+      width: 100%;
+      justify-content: flex-start;
     }
     .products_list {
       flex-direction: column;
       width: 100%;
+      gap: 25px;
     }
     .list_header_wrapper {
       width: 100%;
